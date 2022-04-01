@@ -7,30 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Страница созданная в процессе обучения на курсе Владилена Минина HTML & CSS">
     <meta keywords="курс, обучение, Владилен, HTML, CSS, домашнее задание">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Практические задания по курсу html & CSS</title>
 </head>
-<style>
-    body {
-        background-color: black;
-        color: azure;
-    }
-    
-    .avatar {
-        width: 150px;
-        height: 150px;
-    }
-</style>
+
 
 <body>
-    <img src="./img/123.jpg" class="avatar" alt="Моё Фото">
-    <h1>Виктор Тихомиров</h1>
-    <p>Пишу код, <em>в основном на PHP</em>. Обычно <strong>работаю как FullStack разработчик</strong>, с уклоном в Backend. </p>
+    <div class="container">
 
-    <p>С недавнего времени очень заинтересовался технолигиями позволяющими разрабатывать интересные frontend решения.<br> Но так как немогу назвать себя сильным верстальщиком, очень заинтерисовался курсом от Владилена на тему верстки</p>
-    <hr>
-    <table>
-        <tr>
-            <td>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Раздел 1</a></li>
+                <li><a href="#">Раздел 2</a></li>
+                <li><a href="#">Раздел 3</a></li>
+                <li><a href="#">Раздел 4</a></li>
+            </ul>
+        </div>
+
+        <header id="header">
+            <div>
+                <img src="./img/123.jpg" class="avatar" alt="Моё Фото">
+            </div>
+
+            <div>
+                <h1>Виктор Тихомиров</h1>
+                <p>Пишу код, <em>в основном на PHP</em>. Обычно <strong>работаю как FullStack разработчик</strong>, с уклоном в Backend. </p>
+
+                <p>С недавнего времени очень заинтересовался технолигиями позволяющими разрабатывать frontend решения.<br> Но так как немогу назвать себя сильным верстальщиком, очень заинтерисовался курсом от Владилена на тему вёрстки</p>
+            </div>
+
+        </header>
+        <hr>
+        <div class="info">
+            <div class="card">
                 <h2>Мой опыт</h2>
                 <table>
                     <thead>
@@ -44,89 +53,114 @@
                     <tbody>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>GSM Inform</td>
+                            <td>Программист</td>
+                            <td>
+                                <ul>
+                                    <li>Разработка сайта по продаже SMS контента. Включая CMS</li>
+                                    <li>Разработка ресурса для SMS знакомст (sms чаты)</li>
+                                    <li>Верстка по psd шаблону</li>
+                                    <li>Сбор и обработка статистики по продажам SMS контента</li>
+                                </ul>
+                            </td>
+                            <td>2006г-2007г</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>ООО "ПЭК"</td>
+                            <td>Менеджер клиентского отдела/ <br> Системный администратор</td>
+                            <td>
+                                <ul>
+                                    <li>Работа с клиентами (проверка, подготовка документов и т.п.)</li>
+                                    <li>Обслуживание орг техники</li>
+                                    <li>Обслуживание компьютерной техники и ПО</li>
+                                    <li>Обслуживание MS-SQL баз для 1С (частично под ру-вом головного офиса)</li>
+                                </ul>
+                            </td>
+                            <td>2007-2010</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Группа компаний "СИТ"</td>
+                            <td>????</td>
+                            <td>
+                                <ul>
+                                    <li>Сборка Linux дистрибутивов на основе Gentoo Linux (для серверов и рабочих станций)</li>
+                                    <li>Настройка серверов на Lunux и Windows</li>
+                                    <li>Разработка и внедренеи решений для ИТ инфраструктур малого бизнеса (до 100ПК)</li>
+                                    <li>Разработка внутреннего ПО на основе WEB технологий</li>
+                                    <li>Разработка ПО на основе WEB технологий для клиентов</li>
+                                    <li>Работа с кадрами (Тестировани, найм, обучение, распределение задач)</li>
+                                    <li>Разработка образовательных курсов внутри компании</li>
+                                    <li>Создание систем аналитики и контроля различных показателей бизнес процессов</li>
+                                    <li>Проведение интеграций созданных программ со стороними системами <br> по средством API и/или выгрузок в виде файлов определённого формата</li>
+                                </ul>
+                            </td>
+                            <td>2010-...</td>
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+
                     </tbody>
 
                 </table>
-            </td>
-            <td>
-                <h2>Мои увлечения</h2>
-                <ul>
-                    <li>Программирование</li>
-                    <li>Системное администрирование</li>
-                    <li>Игра на гитаре</li>
-                    <li>Разведение сельхоз. животных :)</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <div>
-        <div>
-            <h3>Форма для связи</h3>
-            <Form target="#" action="POST">
-                <div>
-                    <label for="name">Ваше Имя:</label>
-                    <input type="text" name="name" id="name" placeholder="Ваше Имя">
+            </div>
+            <div class="flexgroup">
+                <div class="card">
+                    <h2>Мои увлечения</h2>
+                    <ul>
+                        <li>Программирование</li>
+                        <li>Системное администрирование</li>
+                        <li>Игра на гитаре</li>
+                        <li>Разведение сельхоз. животных :)</li>
+                    </ul>
                 </div>
-                <div>
-                    <label for="email">Ваш Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Введите E-почту" required>
-                </div>
-                <div>
-                    <label for="phone">Ваш телефон:</label>
-                    <input type="text" name="phone" id="phone" placeholder="Введите ваш телефон">
-                </div>
-                <div>
-                    <label for="request">Хотите получить ответ?</label>
-                    <select>
+                <div class="card contactme">
+                    <h3>Форма для связи</h3>
+                    <Form action="#" method="get">
+                        <div class="formbox">
+                            <label for="name">Ваше Имя:</label>
+                            <input type="text" name="name" id="name" placeholder="Ваше Имя">
+                        </div>
+                        <div class="formbox">
+                            <label for="email">Ваш Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Введите E-почту" required>
+                        </div>
+                        <div class="formbox">
+                            <label for="phone">Ваш телефон:</label>
+                            <input type="text" name="phone" id="phone" placeholder="Введите ваш телефон">
+                        </div>
+                        <div class="formbox">
+                            <label for="request">Хотите получить ответ?</label>
+                            <select>
                         <option value="1">Да</option>
                         <option value="2">Нет</option>
                         <option value="3" selected>Всёравно</option>
                     </select>
+                        </div>
+                        <div class="formbox">
+                            <label>Удобный способ для связи: </label>
+                            <span class="chouse_type_connect"><input type="checkbox" name="request_phone" value="1">Телефон
+                            <input type="checkbox" name="request_mail" value="1">Email</span>
+                        </div>
+                        <div class="message formbox">
+                            <label for="text_message">Ваше сообщение</label><br>
+                            <textarea name="text_message" id="text_message" cols="" rows="5" placeholder="Введите текст вашего сообщения сюда"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Отправить</button>
+                    </Form>
                 </div>
-                <div>
-                    <label>Удобный способ для связи</label>
-                    <input type="checkbox" name="request_type">Телефон
-                    <input type="checkbox" name="request_type">Email
-                </div>
-                <div>
-                    <label for="text_message">Ваше сообщение</label><br>
-                    <textarea name="text_message" id="text_message" cols="40" rows="10" placeholder="Введите текст вашего сообщения сюда"></textarea>
-                </div>
-                <button type="submit">Отправить</button>
-            </Form>
+            </div>
         </div>
-        <div>
-            <h3>Меня можно найти в:</h3>
-            <p>
-                <a href="https://www.youtube.com/channel/UCBq1WWupcrsRiqSguHOO_ow" target="_blank"><img src="./img/4494485.png" width="25px" height="25px" alt="YouTube"></a>
-                <a href="https://vk.com/id12042549" target="_blank"><img src="./img/4494517.png" width="25px" height="25px" alt="VK"></a>
-                <a href="https://www.instagram.com/stavfz/" target="_blank"><img src="./img/4494488.png" width="25px" height="25px" alt="Instagamm"></a>
-                <a href="https://github.com/vfz/" target="_blank"><img src="./img/536452.png" width="25px" height="25px" alt="GitHub"></a>
-            </p>
+
+        <div class="contacts">
+
+            <div class="card social">
+                <h3>Меня можно найти в:</h3>
+                <p>
+                    <a href="https://www.youtube.com/channel/UCBq1WWupcrsRiqSguHOO_ow" target="_blank"><img src="./img/4494485.png" width="25px" height="25px" alt="YouTube"></a>
+                    <a href="https://vk.com/id12042549" target="_blank"><img src="./img/4494517.png" width="25px" height="25px" alt="VK"></a>
+                    <a href="https://www.instagram.com/stavfz/" target="_blank"><img src="./img/4494488.png" width="25px" height="25px" alt="Instagamm"></a>
+                    <a href="https://github.com/vfz/" target="_blank"><img src="./img/536452.png" width="25px" height="25px" alt="GitHub"></a>
+                </p>
+            </div>
         </div>
 
     </div>

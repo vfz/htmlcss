@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "UniNeueBook";
+    src: url("../fonts/UniNeueBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #0e0e2e;
+    color: azure;
+    font-family: 'UniNeuebook';
+    font-size: 17px;
+    line-height: 1.4em;
+}
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    background-color: burlywood;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.btn:active {
+    opacity: .8;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+    padding: 14px 19px;
+    margin: 1px 1px;
+}
+
+.card {
+    background-color: darkslategray;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+
+/* .social{
+    
+} */
+
+
+/*Почемсу не работает с tr */
+
+.info table {
+    border-collapse: collapse;
+}
+
+.info tr {
+    border-bottom: 2px solid rosybrown;
+}
+
+.info td {
+    vertical-align: top;
+    padding: 3px;
+}
+
+.info ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+@media (max-width:600px) {
+    .info table th {
+        display: none;
+    }
+    .info table tr td {
+        display: block;
+    }
+}
+
+.info li:hover {
+    background-color: rgb(92, 131, 131);
+}
+
+.info ul li:nth-child(even) {
+    background-color: #2a4646;
+}
+
+.info ul li:nth-child(even):hover {
+    background-color: rgb(92, 131, 131);
+}
+
+.container {
+    max-width: 1100px;
+    min-width: 340px;
+    margin: auto;
+}
+
+.contactme {
+    font-weight: bold;
+}
+
+.contactme label {
+    width: 215px;
+    text-decoration: underline;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media (max-width:510px) {
+    .contactme label {
+        width: auto;
+    }
+}
+
+@media (max-width:400px) {
+    .contactme label {
+        width: 150px;
+        text-align: left;
+    }
+}
+
+.contactme div {
+    margin-bottom: 10px;
+}
+
+.message label {
+    width: auto;
+    text-decoration: underline;
+    float: left;
+    text-align: right;
+}
+
+.message textarea {
+    width: 100%;
+}
+
+.avatar {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px darkred solid;
+    box-shadow: 7px 5px 7px rgba(120, 120, 120, 0.7);
+}
+
+.navbar {
+    background-color: rgb(52, 46, 92);
+    margin-bottom: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 14px;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-right: 14px;
+    padding: 14px;
+}
+
+.navbar ul li:hover {
+    background-color: rgb(19, 69, 71);
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chouse_type_connect {
+    display: inline-block;
+}
+
+header,
+.flexgroup {
+    display: flex;
+}
+
+.flexgroup .card {
+    width: 50%;
+}
+
+@media (max-width:470px) {
+    .navbar {
+        display: none;
+    }
+    header {
+        display: block;
+        padding: 0 25px 0 5px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:600px) {
+    .flexgroup {
+        display: block;
+    }
+    .flexgroup .card {
+        width: auto;
+        box-sizing: border-box;
+    }
+}
+
+.formbox {
+    width: 100%;
+}
+
+header p,
+h1 {
+    margin-left: 24px;
+}
+
+h2,
+h3 {
+    color: coral;
+}
